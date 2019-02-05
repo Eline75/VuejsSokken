@@ -2,7 +2,8 @@ var app = new Vue({
   el: "#app",
 
   data: {
-    product: "Socks"
+    product: "Socks",
+    image: "vmSocks-green.jpg"
   }
 });
 var product = "Socks";
