@@ -3,7 +3,7 @@ var app = new Vue({
   data: {
     product: "Socks",
     image: ":vmSocks-green.jpg",
-    inStock: true,
+    inStock: false,
     details: ["80% cotton", "20% polyester", "Gender-neutral"],
     variants: [
       {
@@ -20,7 +20,7 @@ var app = new Vue({
     cart: 0
   },
   methods: {
-    addToCart() {
+    addToCart: function() {
       this.cart += 1;
     },
     updateProduct(variantImage) {
